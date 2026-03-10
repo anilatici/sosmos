@@ -615,6 +615,28 @@ main {
   aspect-ratio: 3 / 4;
 }
 
+.ratio-9-16 {
+  aspect-ratio: 9 / 16;
+}
+
+.video-placeholder-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.instagram-embed-card {
+  display: flex;
+  justify-content: center;
+}
+
+.instagram-embed-card .instagram-media {
+  margin: 0 auto !important;
+  min-width: 0 !important;
+  width: 100% !important;
+  max-width: 360px !important;
+}
+
 .quote-strip {
   background: var(--color-sand);
 }
@@ -1027,6 +1049,10 @@ textarea {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .video-placeholder-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .footer-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1097,7 +1123,8 @@ textarea {
   }
 
   .review-grid,
-  .gallery-grid {
+  .gallery-grid,
+  .video-placeholder-grid {
     grid-template-columns: 1fr;
   }
 
