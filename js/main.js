@@ -4,7 +4,6 @@
   const navMenu = document.querySelector(".nav-menu");
   const current = window.location.pathname.split("/").pop() || "index.html";
   const isHomePage = current === "index.html";
-  const reviewsEndpoint = window.SOSMOS_REVIEWS_API_URL || "/api/google-reviews";
 
   const onScroll = () => {
     if (!header) return;
@@ -220,74 +219,5 @@
     parent.insertBefore(shell, img);
     shell.appendChild(img);
   });
-
-  const starText = (rating) => {
-    const clamped = Math.max(0, Math.min(5, Math.round(Number(rating) || 0)));
-    return "★".repeat(clamped) + "☆".repeat(5 - clamped);
-  };
-
-  const escapeHtml = (value) =>
-    String(value || "")
-      .replaceAll("&", "&amp;")
-      .replaceAll("<", "&lt;")
-      .replaceAll(">", "&gt;")
-      .replaceAll('"', "&quot;")
-      .replaceAll("'", "&#39;");
-
-  let googleReviewsPromise;
-  const getGoogleReviews = async () => {
-    if (!googleReviewsPromise) {
-      googleReviewsPromise = fetch(reviewsEndpoint, { headers: { Accept: "application/json" } })
-        .then((response) => (response.ok ? response.json() : null))
-        .catch(() => null);
-    }
-    return googleReviewsPromise;
-  };
-
-  const reviewGrid = document.querySelector("#reviewGrid");
-  if (reviewGrid && current === "reviews.html") {
-    const ratingSummaryText = document.querySelector("#ratingSummaryText");
-
-    const buildReviewCard = (review) => {
-      const authorName = review.authorName || "Google User";
-      const avatar = authorName.charAt(0).toUpperCase();
-      const rating = Number(review.rating) || 0;
-      const text = review.text || "";
-      const dateText = review.relativeTimeDescription || "";
-
-      return `
-        <article class="card review-card reveal visible">
-          <div class="review-head">
-            <div class="avatar">${escapeHtml(avatar)}</div>
-            <span class="source-badge"><i class="fa-brands fa-google"></i> Google</span>
-          </div>
-          <div class="stars">${escapeHtml(starText(rating))}</div>
-          <p>"${escapeHtml(text)}"</p>
-          <small>${escapeHtml(authorName)}${dateText ? ` · ${escapeHtml(dateText)}` : ""}</small>
-        </article>
-      `;
-    };
-
-    const applyLiveReviews = async () => {
-      try {
-        const payload = await getGoogleReviews();
-        if (!payload) return;
-        const reviews = Array.isArray(payload.reviews) ? payload.reviews : [];
-        if (!reviews.length) return;
-
-        reviewGrid.innerHTML = reviews.map(buildReviewCard).join("");
-
-        const rating = Number(payload.place?.rating);
-        const total = Number(payload.place?.userRatingsTotal);
-        if (ratingSummaryText && Number.isFinite(rating) && Number.isFinite(total)) {
-          ratingSummaryText.textContent = `${rating.toFixed(1)}/5 based on ${total} Google reviews`;
-        }
-      } catch (_) {
-        // Keep static fallback reviews when live fetch fails.
-      }
-    };
-
-    applyLiveReviews();
-  }
 
 })();

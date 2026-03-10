@@ -1,194 +1,520 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Customer Reviews | Sosmos</title>
-    <meta
-      name="description"
-      content="Read customer reviews for Sosmos Turkish Street Food at Queen Victoria Market and see why Melbourne locals keep coming back."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito+Sans:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWix+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8l9ggpc8X+Ytst4yBo/hH+8FkLivBtw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <script>
-      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/insights/script.js"></script>
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <a class="logo-link" href="index.html" aria-label="Sosmos home">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Reviews | Sosmos</title>
+  <meta name="description"
+    content="Read customer reviews for Sosmos Turkish Street Food at Queen Victoria Market and see why Melbourne locals keep coming back." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito+Sans:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWix+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8l9ggpc8X+Ytst4yBo/hH+8FkLivBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo-link" href="index.html" aria-label="Sosmos home">
+        <img class="logo-image" src="assets/images/sosmos-logo.png" alt="Sosmos logo" />
+        <span>Sosmos</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="nav-menu" id="siteNav">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="menu.html">Menu</a></li>
+          <li><a class="nav-link" href="story.html">Our Story</a></li>
+          <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li><a class="nav-link" href="reviews.html">Reviews</a></li>
+          <li><a class="nav-link" href="find-us.html">Find Us</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-header__title">Reviews</h1>
+        <div class="page-header__accent" aria-hidden="true"></div>
+        <p class="page-header__breadcrumb"><a href="index.html">Home</a> / <span>Reviews</span></p>
+      </div>
+    </section>
+
+    <section class="section starred-on" id="starred-on">
+      <div class="container">
+        <div class="starred-on__header">
+          <p class="starred-on__label">AS FEATURED IN</p>
+          <h2>Starred On</h2>
+          <p class="starred-on__subheading">Recognised by Melbourne's most trusted food voices.</p>
+          <div class="section-accent-divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="starred-on__list stagger">
+          <!-- STARRED ON CARD — Duplicate this block to add more featured publications -->
+          <article class="starred-on-card reveal">
+            <div class="starred-on-card__identity">
+              <div class="starred-on-card__logo-placeholder">
+                <img src="assets/images/good-food.jpg" alt="Good Food publication logo" />
+              </div>
+              <p class="starred-on-card__publication-name">Good Food (The Age)</p>
+              <span class="starred-on-card__badge">Media Feature</span>
+            </div>
+            <div class="starred-on-card__content">
+              <h3 class="starred-on-card__headline">"The 'soggy burger' at this Queen Vic Market stall is sparking
+                Melbourne's next snack craze"</h3>
+              <p class="starred-on-card__description">
+                Sosmos is introducing Melburnians to some of Turkey's favourite midnight snacks, including wet, squishy
+                sliders, fried mussels and fish sandwiches. Written by Dani Valent.
+              </p>
+              <p class="starred-on-card__date">December 2025</p>
+              <a class="btn btn-secondary starred-on-card__cta"
+                href="https://www.theage.com.au/goodfood/melbourne-eating-out/the-soggy-burger-at-this-queen-vic-market-stall-is-sparking-melbourne-s-next-snack-craze-20251204-p5nkv7.html"
+                target="_blank" rel="noopener noreferrer">Read the Feature →</a>
+            </div>
+          </article>
+
+          <article class="starred-on-card reveal">
+            <div class="starred-on-card__identity">
+              <div class="starred-on-card__logo-placeholder">
+                <img src="assets/images/urban-list.png" alt="Urban List publication logo" />
+              </div>
+              <p class="starred-on-card__publication-name">The Urban List</p>
+              <span class="starred-on-card__badge">Food Blog</span>
+            </div>
+            <div class="starred-on-card__content">
+              <h3 class="starred-on-card__headline">"We're Obsessed With This Food Truck Serving Istanbul's Famous Soggy
+                Burger"</h3>
+              <p class="starred-on-card__description">
+                At Sosmos food truck, chef Tugay Ayvaz brings two of Turkey's most iconic foods from the late night
+                streets of Istanbul to the sheds of Queen Vic Market: the Islak hamburger (the "soggy burger") and the
+                Midye Dolma, stuffed mussels. Written by Kosa Monteith.
+              </p>
+              <p class="starred-on-card__date">September 2025</p>
+              <a class="btn btn-secondary starred-on-card__cta"
+                href="https://www.theurbanlist.com/melbourne/a-list/sosmos" target="_blank"
+                rel="noopener noreferrer">Read the Feature →</a>
+            </div>
+          </article>
+
+          <article class="starred-on-card reveal">
+            <div class="starred-on-card__identity">
+              <div class="starred-on-card__logo-placeholder">
+                <img src="assets/images/timeout.jpg" alt="Time Out Melbourne feature image" />
+              </div>
+              <p class="starred-on-card__publication-name">Time Out Melbourne</p>
+              <span class="starred-on-card__badge">Instagram Feature</span>
+            </div>
+            <div class="starred-on-card__content">
+              <h3 class="starred-on-card__headline">"Introducing Melbourne's messiest new food craze: the soggy burger
+                from Sosmos"</h3>
+              <p class="starred-on-card__description">
+                And yes, gloves are essential. Have a taste for yourself at Queen Vic Market.
+              </p>
+              <p class="starred-on-card__date">January 2026</p>
+              <a class="btn btn-secondary starred-on-card__cta" href="https://www.instagram.com/reel/DTevna6CZff/"
+                target="_blank" rel="noopener noreferrer">View Post on Instagram →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section influencer-reviews">
+      <div class="container">
+        <div class="influencer-reviews__header">
+          <p class="influencer-reviews__label">INFLUENCER REVIEWS</p>
+          <h2>Loved by Food Creators</h2>
+          <p class="influencer-reviews__subheading">Real visits. Real reactions. Straight from the feed.</p>
+          <div class="section-accent-divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="influencer-reviews__grid stagger">
+          <!-- INFLUENCER REVIEW CARD — Duplicate this block to add more influencer reviews -->
+          <article class="influencer-card reveal">
+            <div class="influencer-card__identity">
+              <div class="influencer-card__avatar">JX</div>
+              <div>
+                <div class="influencer-card__handle">
+                  <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+                  <span>Joanna, @joellexjd</span>
+                </div>
+                <span class="influencer-card__followers">6,907 Followers</span>
+              </div>
+            </div>
+            <blockquote class="influencer-card__quote">
+              "My first time having these iconic dishes @sosmos.au and it was definitely a pleasant experience! Food
+              was full of love and generous, the staff were lovely, definitely worth a try!"
+            </blockquote>
+            <a class="btn btn-primary influencer-card__cta" href="https://www.instagram.com/reels/DUSe8yngQ2Y/"
+              target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+              <span>View Instagram Post →</span>
+            </a>
+          </article>
+
+          <article class="influencer-card reveal">
+            <div class="influencer-card__identity">
+              <div class="influencer-card__avatar">EH</div>
+              <div>
+                <div class="influencer-card__handle">
+                  <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+                  <span>Hendri, @eatwithhendri</span>
+                </div>
+                <span class="influencer-card__followers">301K Followers</span>
+              </div>
+            </div>
+            <blockquote class="influencer-card__quote">
+              "Istanbul's iconic street eats has landed in Melbourne at QVM. Think soggy burgers, stuffed mussels and
+              barramundi rolls. Every dish was generous in size, loaded with flavour and freshness!"
+            </blockquote>
+            <a class="btn btn-primary influencer-card__cta" href="https://www.instagram.com/reels/DS19yIbktfG/"
+              target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+              <span>View Instagram Post →</span>
+            </a>
+          </article>
+
+          <article class="influencer-card reveal">
+            <div class="influencer-card__identity">
+              <div class="influencer-card__avatar">MH</div>
+              <div>
+                <div class="influencer-card__handle">
+                  <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+                  <span>Melbourne Halal Guide, @melbourne_halal_guide</span>
+                </div>
+                <span class="influencer-card__followers">21.5K Followers</span>
+              </div>
+            </div>
+            <blockquote class="influencer-card__quote">
+              "Meet the Islak 'Soggy Burger' - soft brioche buns dunked in garlicky tomato sauce, steamed to that
+              perfect wet, squishy bite. Ranked in the world's Top 10 burgers, it's a Turkish street food legend you
+              have to try."
+            </blockquote>
+            <a class="btn btn-primary influencer-card__cta" href="https://www.instagram.com/reels/DSwAymIiVg5/"
+              target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+              <span>View Instagram Post →</span>
+            </a>
+          </article>
+
+          <article class="influencer-card reveal">
+            <div class="influencer-card__identity">
+              <div class="influencer-card__avatar">CF</div>
+              <div>
+                <div class="influencer-card__handle">
+                  <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+                  <span>Crystal, @foodnom</span>
+                </div>
+                <span class="influencer-card__followers">18.1K Followers</span>
+              </div>
+            </div>
+            <blockquote class="influencer-card__quote">
+              "This has to be one of the most generous seafood rolls in Melbourne. Nearly 300g of grilled barramundi
+              packed into a single roll with pickled onions and fresh rocket. The portion is massive, super
+              satisfying, and it's only $20."
+            </blockquote>
+            <a class="btn btn-primary influencer-card__cta" href="https://www.instagram.com/reels/DSUG6fikbdx/"
+              target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+              <span>View Instagram Post →</span>
+            </a>
+          </article>
+
+          <article class="influencer-card reveal">
+            <div class="influencer-card__identity">
+              <div class="influencer-card__avatar">FG</div>
+              <div>
+                <div class="influencer-card__handle">
+                  <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+                  <span>Food and Grace, @food.and.grace</span>
+                </div>
+                <span class="influencer-card__followers">90.1K Followers</span>
+              </div>
+            </div>
+            <blockquote class="influencer-card__quote">
+              "The bun is super soft and drenched in a garlicky tomato sauce, so simple but full of flavour. They also
+              make stuffed mussels filled with fragrant spiced rice, and they just launched their barramundi roll."
+            </blockquote>
+            <a class="btn btn-primary influencer-card__cta" href="https://www.instagram.com/reels/DR8x_3rEWVZ/"
+              target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+              <span>View Instagram Post →</span>
+            </a>
+          </article>
+
+          <article class="influencer-card reveal">
+            <div class="influencer-card__identity">
+              <div class="influencer-card__avatar">TM</div>
+              <div>
+                <div class="influencer-card__handle">
+                  <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+                  <span>Michael, @thatsafeed</span>
+                </div>
+                <span class="influencer-card__followers">1,722 Followers</span>
+              </div>
+            </div>
+            <blockquote class="influencer-card__quote">
+              "A new food truck has entered the villa. SOSMOS have recently set up shop at QVM serving unique treats.
+              Their steamed sliders are saucy and easy to eat, and the authentic rice stuffed mussels are a must."
+            </blockquote>
+            <a class="btn btn-primary influencer-card__cta" href="https://www.instagram.com/reels/DOab5chEUkf/"
+              target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+              <span>View Instagram Post →</span>
+            </a>
+          </article>
+
+          <article class="influencer-card reveal">
+            <div class="influencer-card__identity">
+              <div class="influencer-card__avatar">VV</div>
+              <div>
+                <div class="influencer-card__handle">
+                  <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+                  <span>Viv, @vivlovestoeat</span>
+                </div>
+                <span class="influencer-card__followers">14.1K Followers</span>
+              </div>
+            </div>
+            <blockquote class="influencer-card__quote">
+              "This new food truck has just landed at QVM and the menu is a flavour explosion. The soggy bun was messy
+              to eat but insanely good, especially with that soaked bun."
+            </blockquote>
+            <a class="btn btn-primary influencer-card__cta" href="https://www.instagram.com/reels/DNcE9f4PpPf/"
+              target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+              <span>View Instagram Post →</span>
+            </a>
+          </article>
+
+          <article class="influencer-card reveal">
+            <div class="influencer-card__identity">
+              <div class="influencer-card__avatar">DR</div>
+              <div>
+                <div class="influencer-card__handle">
+                  <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+                  <span>The Dining Room, @thediningroomhq</span>
+                </div>
+                <span class="influencer-card__followers">5,191 Followers</span>
+              </div>
+            </div>
+            <blockquote class="influencer-card__quote">
+              "Soggy burgers... we'd never seen it before so we had to try it. It may not look the best but it
+              definitely didn't disappoint."
+            </blockquote>
+            <a class="btn btn-primary influencer-card__cta" href="https://www.instagram.com/reels/DUFiAzzk4ZU/"
+              target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+              <span>View Instagram Post →</span>
+            </a>
+          </article>
+
+          <article class="influencer-card reveal">
+            <div class="influencer-card__identity">
+              <div class="influencer-card__avatar">MF</div>
+              <div>
+                <div class="influencer-card__handle">
+                  <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+                  <span>Melbourne Foodie, @memwjn</span>
+                </div>
+                <span class="influencer-card__followers">2,061 Followers</span>
+              </div>
+            </div>
+            <blockquote class="influencer-card__quote">
+              "The concept is so interesting. Brioche buns are drenched with tomato sauce with a meat patty and cheese
+              between. The chips were surprisingly crispy, well salted and not too greasy."
+            </blockquote>
+            <a class="btn btn-primary influencer-card__cta" href="https://www.instagram.com/reels/DUKpQFDj8hq/"
+              target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+              <span>View Instagram Post →</span>
+            </a>
+          </article>
+
+          <article class="influencer-card reveal">
+            <div class="influencer-card__identity">
+              <div class="influencer-card__avatar">MM</div>
+              <div>
+                <div class="influencer-card__handle">
+                  <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+                  <span>Mikayil Makras, @instagoodeagle_</span>
+                </div>
+                <span class="influencer-card__followers">224 Followers</span>
+              </div>
+            </div>
+            <blockquote class="influencer-card__quote">
+              "A famous Istanbul street food staple: a small beef patty on a soft bun drenched in garlicky tomato
+              sauce and steamed in a glass cabinet, known for a moist, savory and tender texture."
+            </blockquote>
+            <a class="btn btn-primary influencer-card__cta" href="https://www.instagram.com/p/DT-E4rAgbCq/"
+              target="_blank" rel="noopener noreferrer">
+              <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+              <span>View Instagram Post →</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Customer Reviews</h2>
+        <div class="rating-summary" id="ratingSummary">
+          <span aria-hidden="true">⭐⭐⭐⭐⭐</span>
+          <span id="ratingSummaryText">5/5 based on 13 reviews</span>
+        </div>
+
+        <div class="review-grid" id="reviewGrid">
+          <article class="card review-card reveal">
+            <div class="review-head">
+              <div class="avatar">F</div><span class="source-badge"><i class="fa-brands fa-google"></i> Google</span>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>"Everything was delicious and the service was great. Food: 5. Service: 5. Atmosphere: 5."</p>
+            <small>Feray Demirbağ · 19 minutes ago</small>
+          </article>
+          <article class="card review-card reveal">
+            <div class="review-head">
+              <div class="avatar">A</div><span class="source-badge"><i class="fa-brands fa-google"></i> Google</span>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>"If you're looking for something a bit different in Melbourne's street food scene, this place is
+              definitely worth checking out. The Turkish flavours are done really well and you can tell there's a lot
+              of care put into the food."</p>
+            <small>Arda KARATAŞ · 2 days ago</small>
+          </article>
+          <article class="card review-card reveal">
+            <div class="review-head">
+              <div class="avatar">E</div><span class="source-badge"><i class="fa-brands fa-google"></i> Google</span>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>"Such a great spot for Turkish street food! We finally got to experience the Turkish flavours we've
+              been missing. The soggy burger was super juicy and delicious, the tantuni was perfectly seasoned, and
+              the stuffed mussels were amazing."</p>
+            <small>Elif Yıldız · 2 days ago</small>
+          </article>
+          <article class="card review-card reveal">
+            <div class="review-head">
+              <div class="avatar">S</div><span class="source-badge"><i class="fa-brands fa-google"></i> Google</span>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>"Seeking something different from the standard fare of food trucks? Sosmos might just be what you're
+              looking for. From the famous Turkish soggy burger atop a pile of well-seasoned chips to rice-stuffed
+              mussels, this place is worth trying."</p>
+            <small>Steven GLascelles · 3 days ago</small>
+          </article>
+          <article class="card review-card reveal">
+            <div class="review-head">
+              <div class="avatar">B</div><span class="source-badge"><i class="fa-brands fa-google"></i> Google</span>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>"What a fabulous addition to Melbourne's food scene. Dishes I'd never tasted before, like beautifully
+              tender mussels stuffed with spiced rice, and the now-famous wet burgers served with gloves."</p>
+            <small>Barbara Mohr · 3 days ago</small>
+          </article>
+          <article class="card review-card reveal">
+            <div class="review-head">
+              <div class="avatar">H</div><span class="source-badge"><i class="fa-brands fa-google"></i> Google</span>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>"Absolutely delicious. The Turkish street food I've been missing in Melbourne! Thank you guys."</p>
+            <small>halit dogan · 3 days ago</small>
+          </article>
+          <article class="card review-card reveal">
+            <div class="review-head">
+              <div class="avatar">F</div><span class="source-badge"><i class="fa-brands fa-google"></i> Google</span>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>"This has to be one of the most generous seafood rolls in Melbourne. Nearly 300g of grilled barramundi
+              in a single roll with pickled onions and fresh rocket. Massive portion and super satisfying."</p>
+            <small>Fooodnom · 6 days ago</small>
+          </article>
+          <article class="card review-card reveal">
+            <div class="review-head">
+              <div class="avatar">J</div><span class="source-badge"><i class="fa-brands fa-google"></i> Google</span>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>"Really yum Turkish food. Gotta try their soggy burgers!!"</p>
+            <small>J · a week ago</small>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container" style="text-align: center">
+        <h2>Had a great experience? We'd love to hear from you.</h2>
+        <div class="hero-actions" style="margin-top: 20px">
+          <a class="btn btn-primary"
+            href="https://www.google.com/maps/place/Sosmos+Melbourne/@-37.8069972,144.9559584,17z/data=!4m8!3m7!1s0x6ad65de702146683:0xf5a9a5db53d5651f!8m2!3d-37.8069972!4d144.9559584!9m1!1b1!16s%2Fg%2F11n3yh400d?entry=ttu"
+            target="_blank" rel="noopener">Leave a Google Review</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <hr class="tile-divider" />
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo-link" href="index.html" style="margin-bottom: 12px">
           <img class="logo-image" src="assets/images/sosmos-logo.png" alt="Sosmos logo" />
           <span>Sosmos</span>
         </a>
-        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
-          <span></span><span></span><span></span>
-        </button>
-        <nav>
-          <ul class="nav-menu" id="siteNav">
-            <li><a class="nav-link" href="index.html">Home</a></li>
-            <li><a class="nav-link" href="menu.html">Menu</a></li>
-            <li><a class="nav-link" href="story.html">Our Story</a></li>
-            <li><a class="nav-link" href="gallery.html">Gallery</a></li>
-            <li><a class="nav-link" href="reviews.html">Reviews</a></li>
-            <li><a class="nav-link" href="find-us.html">Find Us</a></li>
-            <li><a class="nav-link" href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
+        <p>Authentic Turkish flavour. Right at your market.</p>
       </div>
-    </header>
-
-    <main>
-      <section class="page-header">
-        <div class="container">
-          <h1 class="page-header__title">Reviews</h1>
-          <div class="page-header__accent" aria-hidden="true"></div>
-          <p class="page-header__breadcrumb"><a href="index.html">Home</a> / <span>Reviews</span></p>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="rating-summary" id="ratingSummary">
-            <span aria-hidden="true">⭐⭐⭐⭐⭐</span>
-            <span id="ratingSummaryText">4.9/5 based on 187 reviews</span>
-          </div>
-
-          <div class="review-grid" id="reviewGrid">
-            <article class="card review-card reveal">
-              <div class="review-head"><div class="avatar">A</div><span class="source-badge"><i class="fa-brands fa-google"></i> Google</span></div>
-              <div class="stars">★★★★★</div>
-              <p>"The midye transported me straight back to Istanbul. Absolutely authentic and delicious!"</p>
-              <small>Ayla K. · 3 Feb 2026</small>
-            </article>
-            <article class="card review-card reveal">
-              <div class="review-head"><div class="avatar">M</div><span class="source-badge"><i class="fa-brands fa-google"></i> Google</span></div>
-              <div class="stars">★★★★★</div>
-              <p>"Best barramundi roll I've had in Melbourne. Fresh fish, perfectly seasoned. Will be back every Saturday."</p>
-              <small>Marcus T. · 17 Jan 2026</small>
-            </article>
-            <article class="card review-card reveal">
-              <div class="review-head"><div class="avatar">S</div><span class="source-badge"><i class="fa-brands fa-facebook-f"></i> Facebook</span></div>
-              <div class="stars">★★★★★</div>
-              <p>"The soggy burger is unlike anything else at the market. Messy, incredible, and so worth it."</p>
-              <small>Sophie R. · 5 Mar 2026</small>
-            </article>
-            <article class="card review-card reveal">
-              <div class="review-head"><div class="avatar">D</div><span class="source-badge"><i class="fa-brands fa-google"></i> Google</span></div>
-              <div class="stars">★★★★★</div>
-              <p>"Great food, lovely staff. Found it at QVM on a Friday and now I make special trips just for Sosmos."</p>
-              <small>David L. · 9 Dec 2025</small>
-            </article>
-            <article class="card review-card reveal">
-              <div class="review-head"><div class="avatar">P</div><span class="source-badge"><i class="fa-brands fa-google"></i> Google</span></div>
-              <div class="stars">★★★★★</div>
-              <p>"The tantuni wrap is my go-to. Generous portions, so much flavour. Highly recommend!"</p>
-              <small>Priya N. · 28 Feb 2026</small>
-            </article>
-            <article class="card review-card reveal">
-              <div class="review-head"><div class="avatar">L</div><span class="source-badge"><i class="fa-brands fa-facebook-f"></i> Facebook</span></div>
-              <div class="stars">★★★★★</div>
-              <p>"Such warm service and consistently delicious food. You can taste the care in every bite."</p>
-              <small>Leah G. · 1 Mar 2026</small>
-            </article>
-            <article class="card review-card reveal">
-              <div class="review-head"><div class="avatar">E</div><span class="source-badge"><i class="fa-brands fa-google"></i> Google</span></div>
-              <div class="stars">★★★★★</div>
-              <p>"I came for the mussels and stayed for everything else. Chips are also dangerously good."</p>
-              <small>Ethan W. · 12 Jan 2026</small>
-            </article>
-            <article class="card review-card reveal">
-              <div class="review-head"><div class="avatar">N</div><span class="source-badge"><i class="fa-brands fa-google"></i> Google</span></div>
-              <div class="stars">★★★★★</div>
-              <p>"Perfect market lunch. Quick service, bold flavours, and portions that actually satisfy."</p>
-              <small>Nadia O. · 16 Feb 2026</small>
-            </article>
-            <article class="card review-card reveal">
-              <div class="review-head"><div class="avatar">J</div><span class="source-badge"><i class="fa-brands fa-facebook-f"></i> Facebook</span></div>
-              <div class="stars">★★★★★</div>
-              <p>"My family visits QVM every weekend and Sosmos is now non-negotiable. Everything tastes fresh."</p>
-              <small>James C. · 22 Feb 2026</small>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-alt">
-        <div class="container" style="text-align: center">
-          <h2>Had a great experience? We'd love to hear from you.</h2>
-          <div class="hero-actions" style="margin-top: 20px">
-            <a
-              class="btn btn-primary"
-              href="https://www.google.com/maps/place/Sosmos+Melbourne/@-37.8069972,144.9559584,17z/data=!4m8!3m7!1s0x6ad65de702146683:0xf5a9a5db53d5651f!8m2!3d-37.8069972!4d144.9559584!9m1!1b1!16s%2Fg%2F11n3yh400d?entry=ttu"
-              target="_blank"
-              rel="noopener"
-              >Leave a Google Review</a
-            >
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <hr class="tile-divider" />
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <a class="logo-link" href="index.html" style="margin-bottom: 12px">
-            <img class="logo-image" src="assets/images/sosmos-logo.png" alt="Sosmos logo" />
-            <span>Sosmos</span>
-          </a>
-          <p>Authentic Turkish flavour. Right at your market.</p>
-        </div>
-        <div class="footer-links">
-          <h3>Navigate</h3>
-          <a href="index.html">Home</a>
-          <a href="menu.html">Menu</a>
-          <a href="story.html">Our Story</a>
-          <a href="gallery.html">Gallery</a>
-          <a href="reviews.html">Reviews</a>
-          <a href="find-us.html">Find Us</a>
-          <a href="contact.html">Contact</a>
-        </div>
-        <div>
-          <h3>Hours</h3>
-          <ul class="footer-hours">
-            <li>Mon: Closed</li>
-            <li>Tue: 9:00 AM-3:00 PM</li>
-            <li>Wed: Closed</li>
-            <li>Thu: 9:00 AM-3:00 PM</li>
-            <li>Fri: 9:00 AM-3:00 PM</li>
-            <li>Sat: 9:00 AM-4:00 PM</li>
-            <li>Sun: 9:00 AM-4:00 PM</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Follow</h3>
-          <div class="social-row">
-            <a class="social-btn" href="https://www.instagram.com/sosmos.au" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a class="social-btn" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a class="social-btn" href="https://www.tiktok.com/@sosmos.au" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-          </div>
+      <div class="footer-links">
+        <h3>Navigate</h3>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="story.html">Our Story</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="find-us.html">Find Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <ul class="footer-hours">
+          <li>Mon: Closed</li>
+          <li>Tue: 9:00 AM-3:00 PM</li>
+          <li>Wed: Closed</li>
+          <li>Thu: 9:00 AM-3:00 PM</li>
+          <li>Fri: 9:00 AM-3:00 PM</li>
+          <li>Sat: 9:00 AM-4:00 PM</li>
+          <li>Sun: 9:00 AM-4:00 PM</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <div class="social-row">
+          <a class="social-btn" href="https://www.instagram.com/sosmos.au" target="_blank" rel="noopener"
+            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a class="social-btn" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="social-btn" href="https://www.tiktok.com/@sosmos.au" target="_blank" rel="noopener"
+            aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
         </div>
       </div>
-      <div class="container footer-bottom">© 2025 Sosmos. All rights reserved. | Queen Victoria Market, Melbourne, Australia</div>
-    </footer>
+    </div>
+    <div class="container footer-bottom">© 2025 Sosmos. All rights reserved. | Queen Victoria Market, Melbourne,
+      Australia</div>
+  </footer>
 
-    <script>
-      window.SOSMOS_REVIEWS_API_URL = "https://sosmos-google-reviews.anillatici.workers.dev/api/google-reviews";
-    </script>
-    <script src="js/main.js"></script>
-  </body>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
