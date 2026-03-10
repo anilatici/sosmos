@@ -4,6 +4,7 @@
   const navMenu = document.querySelector(".nav-menu");
   const current = window.location.pathname.split("/").pop() || "index.html";
   const isHomePage = current === "index.html";
+  const reviewsEndpoint = window.SOSMOS_REVIEWS_API_URL || "/api/google-reviews";
 
   const onScroll = () => {
     if (!header) return;
@@ -194,23 +195,32 @@
     shell.appendChild(img);
   });
 
+  const starText = (rating) => {
+    const clamped = Math.max(0, Math.min(5, Math.round(Number(rating) || 0)));
+    return "★".repeat(clamped) + "☆".repeat(5 - clamped);
+  };
+
+  const escapeHtml = (value) =>
+    String(value || "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#39;");
+
+  let googleReviewsPromise;
+  const getGoogleReviews = async () => {
+    if (!googleReviewsPromise) {
+      googleReviewsPromise = fetch(reviewsEndpoint, { headers: { Accept: "application/json" } })
+        .then((response) => (response.ok ? response.json() : null))
+        .catch(() => null);
+    }
+    return googleReviewsPromise;
+  };
+
   const reviewGrid = document.querySelector("#reviewGrid");
   if (reviewGrid && current === "reviews.html") {
     const ratingSummaryText = document.querySelector("#ratingSummaryText");
-    const endpoint = window.SOSMOS_REVIEWS_API_URL || "/api/google-reviews";
-
-    const starText = (rating) => {
-      const clamped = Math.max(0, Math.min(5, Math.round(Number(rating) || 0)));
-      return "★".repeat(clamped) + "☆".repeat(5 - clamped);
-    };
-
-    const escapeHtml = (value) =>
-      String(value || "")
-        .replaceAll("&", "&amp;")
-        .replaceAll("<", "&lt;")
-        .replaceAll(">", "&gt;")
-        .replaceAll('"', "&quot;")
-        .replaceAll("'", "&#39;");
 
     const buildReviewCard = (review) => {
       const authorName = review.authorName || "Google User";
@@ -234,13 +244,12 @@
 
     const applyLiveReviews = async () => {
       try {
-        const response = await fetch(endpoint, { headers: { Accept: "application/json" } });
-        if (!response.ok) return;
-        const payload = await response.json();
+        const payload = await getGoogleReviews();
+        if (!payload) return;
         const reviews = Array.isArray(payload.reviews) ? payload.reviews : [];
         if (!reviews.length) return;
 
-        reviewGrid.innerHTML = reviews.slice(0, 10).map(buildReviewCard).join("");
+        reviewGrid.innerHTML = reviews.map(buildReviewCard).join("");
 
         const rating = Number(payload.place?.rating);
         const total = Number(payload.place?.userRatingsTotal);
@@ -254,4 +263,5 @@
 
     applyLiveReviews();
   }
+
 })();
