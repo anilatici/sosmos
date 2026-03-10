@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Us | Sosmos — Queen Victoria Market</title>
+    <meta
+      name="description"
+      content="Find Sosmos at Queen Victoria Market, Melbourne. View opening hours, map directions, and transport options for your next visit."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWix+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8l9ggpc8X+Ytst4yBo/hH+8FkLivBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo-link" href="index.html" aria-label="Sosmos home">
+          <img class="logo-image" src="assets/images/sosmos-logo.png" alt="Sosmos logo" />
+          <span>Sosmos</span>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav>
+          <ul class="nav-menu" id="siteNav">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="menu.html">Menu</a></li>
+            <li><a class="nav-link" href="story.html">Our Story</a></li>
+            <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li><a class="nav-link" href="reviews.html">Reviews</a></li>
+            <li><a class="nav-link" href="find-us.html">Find Us</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <h1 class="page-header__title">Find Us</h1>
+          <div class="page-header__accent" aria-hidden="true"></div>
+          <p class="page-header__breadcrumb"><a href="index.html">Home</a> / <span>Find Us</span></p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container find-grid">
+          <div class="map-wrap reveal">
+            <iframe
+              title="Map to Queen Victoria Market, Melbourne"
+              src="https://www.google.com/maps?q=-37.8072,144.9567&z=16&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <p style="margin-top: 16px">
+              <a
+                class="btn btn-primary"
+                href="https://www.google.com/maps/dir/?api=1&destination=Queen+Victoria+Market+Melbourne"
+                target="_blank"
+                rel="noopener"
+                >Get Directions</a
+              >
+            </p>
+          </div>
+
+          <aside class="card reveal" style="padding: 24px">
+            <h2 style="margin-bottom: 14px">Location & Hours</h2>
+            <p>
+              Queen Victoria Market<br />
+              Corner of Elizabeth and Victoria Streets<br />
+              Melbourne VIC 3000<br />
+              Australia
+            </p>
+
+            <table class="hours-table" aria-label="Sosmos opening hours">
+              <thead>
+                <tr>
+                  <th>Day</th>
+                  <th>Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="closed" data-day="1"><td>Monday</td><td>Closed</td></tr>
+                <tr data-day="2"><td>Tuesday</td><td>9:00 AM - 3:00 PM</td></tr>
+                <tr class="closed" data-day="3"><td>Wednesday</td><td>Closed</td></tr>
+                <tr data-day="4"><td>Thursday</td><td>9:00 AM - 3:00 PM</td></tr>
+                <tr data-day="5"><td>Friday</td><td>9:00 AM - 3:00 PM</td></tr>
+                <tr data-day="6"><td>Saturday</td><td>9:00 AM - 4:00 PM</td></tr>
+                <tr data-day="0"><td>Sunday</td><td>9:00 AM - 4:00 PM</td></tr>
+              </tbody>
+            </table>
+            <p style="margin-top: 14px">Hours may vary on public holidays. Follow us on Instagram @sosmos.au for updates.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <h2 class="section-title">Getting There</h2>
+          <div class="transport-grid">
+            <article class="transport-card reveal">
+              <h3>🚃 Tram</h3>
+              <p>Nearest tram stops are on Elizabeth St and Victoria St (routes 19, 57, and 59).</p>
+            </article>
+            <article class="transport-card reveal">
+              <h3>🚶 Walking</h3>
+              <p>We're about a 10-minute walk from Melbourne Central Station.</p>
+            </article>
+            <article class="transport-card reveal">
+              <h3>🚗 Parking</h3>
+              <p>Paid parking is available in the QVM car park and surrounding streets.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="background: #26221e; color: #fff">
+        <div class="container" style="text-align: center">
+          <h2>Stay updated on our hours and specials - follow us on socials.</h2>
+          <div class="social-row" style="justify-content: center; margin-top: 20px">
+            <a class="social-btn" href="https://www.instagram.com/sosmos.au" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a class="social-btn" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a class="social-btn" href="https://www.tiktok.com/@sosmos.au" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <hr class="tile-divider" />
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo-link" href="index.html" style="margin-bottom: 12px">
+            <img class="logo-image" src="assets/images/sosmos-logo.png" alt="Sosmos logo" />
+            <span>Sosmos</span>
+          </a>
+          <p>Authentic Turkish flavour. Right at your market.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Navigate</h3>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="story.html">Our Story</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="find-us.html">Find Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <ul class="footer-hours">
+            <li>Mon: Closed</li>
+            <li>Tue: 9:00 AM-3:00 PM</li>
+            <li>Wed: Closed</li>
+            <li>Thu: 9:00 AM-3:00 PM</li>
+            <li>Fri: 9:00 AM-3:00 PM</li>
+            <li>Sat: 9:00 AM-4:00 PM</li>
+            <li>Sun: 9:00 AM-4:00 PM</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Follow</h3>
+          <div class="social-row">
+            <a class="social-btn" href="https://www.instagram.com/sosmos.au" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a class="social-btn" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a class="social-btn" href="https://www.tiktok.com/@sosmos.au" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">© 2025 Sosmos. All rights reserved. | Queen Victoria Market, Melbourne, Australia</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

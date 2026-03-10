@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | Sosmos</title>
+    <meta
+      name="description"
+      content="Browse the Sosmos gallery for food highlights, food truck moments, market vibes, and behind-the-scenes snapshots from Queen Victoria Market."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWix+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8l9ggpc8X+Ytst4yBo/hH+8FkLivBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo-link" href="index.html" aria-label="Sosmos home">
+          <img class="logo-image" src="assets/images/sosmos-logo.png" alt="Sosmos logo" />
+          <span>Sosmos</span>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav>
+          <ul class="nav-menu" id="siteNav">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="menu.html">Menu</a></li>
+            <li><a class="nav-link" href="story.html">Our Story</a></li>
+            <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li><a class="nav-link" href="reviews.html">Reviews</a></li>
+            <li><a class="nav-link" href="find-us.html">Find Us</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <h1 class="page-header__title">Gallery</h1>
+          <div class="page-header__accent" aria-hidden="true"></div>
+          <p class="page-header__breadcrumb"><a href="index.html">Home</a> / <span>Gallery</span></p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="food">Food</button>
+            <button class="filter-btn" data-filter="truck">The Truck</button>
+            <button class="filter-btn" data-filter="market">Market Vibes</button>
+            <button class="filter-btn" data-filter="behind">Behind the Scenes</button>
+          </div>
+
+          <div class="gallery-grid">
+            <article class="gallery-card wide reveal" data-category="food" data-caption="Barramundi roll close-up">
+              <img src="assets/images/barramundi-roll.png" alt="Barramundi roll close-up" />
+              <div class="overlay">Barramundi roll close-up</div>
+            </article>
+            <article class="gallery-card tall reveal" data-category="food" data-caption="Stuffed mussels tray">
+              <img src="assets/images/mussel-1.png" alt="Stuffed mussels tray" />
+              <div class="overlay">Stuffed mussels tray</div>
+            </article>
+            <article class="gallery-card reveal" data-category="behind food" data-caption="Chicken tantuni wrap being made">
+              <img src="assets/images/chicken-roll.png" alt="Chicken tantuni wrap being made" />
+              <div class="overlay">Chicken tantuni wrap being made</div>
+            </article>
+            <article class="gallery-card reveal" data-category="truck" data-caption="Food truck exterior">
+              <img src="assets/images/truck.png" alt="Food truck exterior" />
+              <div class="overlay">Food truck exterior</div>
+            </article>
+            <article class="gallery-card wide reveal" data-category="market" data-caption="QVM market crowd">
+              <img src="assets/images/qvm.png" alt="QVM market crowd" />
+              <div class="overlay">QVM market crowd</div>
+            </article>
+            <article class="gallery-card reveal" data-category="food" data-caption="Chips in paper bag">
+              <img src="assets/images/chips.jpg" alt="Chips in paper bag" />
+              <div class="overlay">Chips in paper bag</div>
+            </article>
+            <article class="gallery-card reveal" data-category="behind" data-caption="Fresh herbs and spices station">
+              <img src="assets/images/salad.png" alt="Fresh herbs and spices station" />
+              <div class="overlay">Fresh herbs and spices station</div>
+            </article>
+            <article class="gallery-card tall reveal" data-category="truck behind" data-caption="Team serving at lunch rush">
+              <img src="assets/images/sosmos-exterior.JPG" alt="Team serving at lunch rush" />
+              <div class="overlay">Team serving at lunch rush</div>
+            </article>
+            <article class="gallery-card reveal" data-category="food" data-caption="Soggy burger and sauce glaze">
+              <img src="assets/images/soggy-1.png" alt="Soggy burger and sauce glaze" />
+              <div class="overlay">Soggy burger and sauce glaze</div>
+            </article>
+            <article class="gallery-card wide reveal" data-category="market truck" data-caption="Sosmos truck at golden hour">
+              <img src="assets/images/truck-1.png" alt="Sosmos truck at golden hour" />
+              <div class="overlay">Sosmos truck at golden hour</div>
+            </article>
+            <article class="gallery-card reveal" data-category="food" data-caption="Barramundi wrap cross-section">
+              <img src="assets/images/barramundi-1.png" alt="Barramundi wrap cross-section" />
+              <div class="overlay">Barramundi wrap cross-section</div>
+            </article>
+            <article class="gallery-card reveal" data-category="market" data-caption="Friends eating at QVM tables">
+              <img src="assets/images/stay-happy.JPG" alt="Friends eating at QVM tables" />
+              <div class="overlay">Friends eating at QVM tables</div>
+            </article>
+            <article class="gallery-card reveal" data-category="behind" data-caption="Midye rice filling prep">
+              <img src="assets/images/mussel.png" alt="Midye rice filling prep" />
+              <div class="overlay">Midye rice filling prep</div>
+            </article>
+            <article class="gallery-card reveal" data-category="truck market" data-caption="Queue at Sosmos window">
+              <img src="assets/images/truck-2.png" alt="Queue at Sosmos window" />
+              <div class="overlay">Queue at Sosmos window</div>
+            </article>
+            <article class="gallery-card reveal" data-category="food" data-caption="Soggy burger variation">
+              <img src="assets/images/soggy-3.jpg" alt="Soggy burger variation" />
+              <div class="overlay">Soggy burger variation</div>
+            </article>
+            <article class="gallery-card reveal" data-category="food" data-caption="Fresh barramundi roll detail">
+              <img src="assets/images/soggy.png" alt="Fresh barramundi roll detail" />
+              <div class="overlay">Fresh barramundi roll detail</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <h2 class="section-title">Watch Us in Action</h2>
+          <div class="card reveal" style="padding: 16px">
+            <div class="img-placeholder ratio-16-9" role="img" aria-label="Video placeholder — food truck in action or food preparation reel">
+              <strong>▶ Video placeholder — food truck in action or food preparation reel</strong>
+            </div>
+          </div>
+          <p class="section-lead" style="margin-top: 20px">
+            Embed YouTube or Instagram Reel URL here. Follow us on Instagram and TikTok (@sosmos.au) for the latest reels and updates.
+          </p>
+          <div class="social-row" style="justify-content: center">
+            <a class="btn btn-secondary" href="https://www.instagram.com/sosmos.au" target="_blank" rel="noopener"
+              ><i class="fa-brands fa-instagram"></i> Instagram @sosmos.au</a
+            >
+            <a class="btn btn-secondary" href="https://www.tiktok.com/@sosmos.au" target="_blank" rel="noopener"
+              ><i class="fa-brands fa-tiktok"></i> TikTok @sosmos.au</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="lightbox" aria-hidden="true">
+      <button class="lightbox-nav lightbox-prev" aria-label="Previous image">‹</button>
+      <div class="lightbox-content">
+        <button class="btn btn-secondary lightbox-close" aria-label="Close lightbox" style="margin-bottom: 16px">Close</button>
+        <div class="lightbox-image"></div>
+        <p class="lightbox-caption" style="margin-top: 12px"></p>
+      </div>
+      <button class="lightbox-nav lightbox-next" aria-label="Next image">›</button>
+    </div>
+
+    <hr class="tile-divider" />
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo-link" href="index.html" style="margin-bottom: 12px">
+            <img class="logo-image" src="assets/images/sosmos-logo.png" alt="Sosmos logo" />
+            <span>Sosmos</span>
+          </a>
+          <p>Authentic Turkish flavour. Right at your market.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Navigate</h3>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="story.html">Our Story</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="find-us.html">Find Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <ul class="footer-hours">
+            <li>Mon: Closed</li>
+            <li>Tue: 9:00 AM-3:00 PM</li>
+            <li>Wed: Closed</li>
+            <li>Thu: 9:00 AM-3:00 PM</li>
+            <li>Fri: 9:00 AM-3:00 PM</li>
+            <li>Sat: 9:00 AM-4:00 PM</li>
+            <li>Sun: 9:00 AM-4:00 PM</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Follow</h3>
+          <div class="social-row">
+            <a class="social-btn" href="https://www.instagram.com/sosmos.au" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a class="social-btn" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a class="social-btn" href="https://www.tiktok.com/@sosmos.au" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">© 2025 Sosmos. All rights reserved. | Queen Victoria Market, Melbourne, Australia</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

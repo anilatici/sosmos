@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | Sosmos Turkish Street Food</title>
+  <meta name="description"
+    content="Explore the Sosmos menu at Queen Victoria Market: Turkish wraps, barramundi rolls, midye stuffed mussels, soggy burger, and sides." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito+Sans:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWix+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8l9ggpc8X+Ytst4yBo/hH+8FkLivBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo-link" href="index.html" aria-label="Sosmos home">
+        <img class="logo-image" src="assets/images/sosmos-logo.png" alt="Sosmos logo" />
+        <span>Sosmos</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="nav-menu" id="siteNav">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="menu.html">Menu</a></li>
+          <li><a class="nav-link" href="story.html">Our Story</a></li>
+          <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li><a class="nav-link" href="reviews.html">Reviews</a></li>
+          <li><a class="nav-link" href="find-us.html">Find Us</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-header__title">Our Menu</h1>
+        <div class="page-header__accent" aria-hidden="true"></div>
+        <p class="page-header__breadcrumb"><a href="index.html">Home</a> / <span>Our Menu</span></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="menu-tabs">
+          <a class="menu-tab active" href="#rolls-wraps">Rolls & Wraps</a>
+          <a class="menu-tab" href="#mussels">Mussels</a>
+          <a class="menu-tab" href="#burgers">Burgers</a>
+          <a class="menu-tab" href="#sides">Sides</a>
+        </div>
+
+        <section id="rolls-wraps" class="section" style="padding-top: 24px">
+          <h2 class="section-title">Rolls & Wraps</h2>
+          <div class="menu-grid">
+            <article class="card reveal">
+              <img src="assets/images/barramundi-roll.png" alt="Barramundi roll" />
+              <div class="card-body">
+                <h3>Barramundi Roll</h3>
+                <p>Fresh barramundi fillet, crisp salad, lemon-zest dressing, and house spice in a soft roll.</p>
+                <div class="tag-list"><span class="tag">Halal</span><span class="tag">Contains Fish</span></div>
+                <p class="price-tba">$20</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <img src="assets/images/barramundi-1.png" alt="Barramundi wrap" />
+              <div class="card-body">
+                <h3>Barramundi Wrap</h3>
+                <p>Flaky fish, fresh herbs, tomato, and garlic yoghurt wrapped in warm flatbread.</p>
+                <div class="tag-list"><span class="tag">Halal</span><span class="tag">Contains Fish</span></div>
+                <p class="price-tba">$20</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <img src="assets/images/chicken-roll.png" alt="Chicken tantuni roll" style="--img-focus: center 69%;" />
+              <div class="card-body">
+                <h3>Chicken Tantuni Roll</h3>
+                <p>Turkish-style seasoned chicken with sumac onion, parsley, and warm chilli notes in a roll.</p>
+                <div class="tag-list"><span class="tag">Halal</span><span class="tag">Mild Spice</span></div>
+                <p class="price-tba">$18</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <img src="assets/images/salad.png" alt="Chicken tantuni wrap with fresh salad" />
+              <div class="card-body">
+                <h3>Chicken Tantuni Wrap</h3>
+                <p>Sliced chicken cooked on hot plate with Turkish spices, wrapped with greens and pickles.</p>
+                <div class="tag-list"><span class="tag">Halal</span><span class="tag">Gluten-Free Option</span></div>
+                <p class="price-tba">$18</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="mussels" class="section" style="padding-top: 24px">
+          <h2 class="section-title">Mussels</h2>
+          <div class="menu-grid" style="grid-template-columns: 1fr">
+            <article class="card reveal">
+              <img src="assets/images/mussel-1.png" alt="Steamed rice stuffed mussels (midye dolma)"
+                style="--img-focus: center 85%;" />
+              <div class="card-body">
+                <h3>Steamed Rice Stuffed Mussels (Midye Dolma)</h3>
+                <p>
+                  A beloved Turkish street snack: mussels filled with aromatic rice, currants, herbs, and warm spice.
+                  Sold per piece or by portion.
+                </p>
+                <div class="tag-list"><span class="tag">Halal</span><span class="tag">Contains Shellfish</span></div>
+                <p class="price-tba">$20</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="burgers" class="section" style="padding-top: 24px">
+          <h2 class="section-title">Burgers</h2>
+          <div class="menu-grid" style="grid-template-columns: 1fr">
+            <article class="card reveal">
+              <img src="assets/images/soggy-3.jpg" alt="Soggy burger" style="--img-focus: center 85%;" />
+              <div class="card-body">
+                <h3>Soggy Burger</h3>
+                <p>
+                  Turkish-style burger, slow-cooked and juicy, served on a soft bun soaked in rich broth inspired by
+                  Istanbul's islak burger tradition.
+                </p>
+                <div class="tag-list"><span class="tag">Halal</span><span class="tag">Signature Item</span></div>
+                <p class="price-tba">$7 each | 3 for $18 (with chips) | 5 for $25 (with chips)</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="sides" class="section" style="padding-top: 24px">
+          <h2 class="section-title">Sides</h2>
+          <div class="menu-grid" style="grid-template-columns: 1fr">
+            <article class="card reveal">
+              <img src="assets/images/chips.jpg" alt="Seasoned chips side" style="--img-focus: center 85%;" />
+              <div class="card-body">
+                <h3>Chips</h3>
+                <p>Golden seasoned fries with a savoury Turkish spice blend, made fresh and served hot.</p>
+                <div class="tag-list"><span class="tag">Vegetarian</span><span class="tag">Gluten-Free</span></div>
+                <p class="price-tba">$5</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <div class="note-block reveal">
+          Menu items and availability may vary. Please speak to our team at the truck for allergen information.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <hr class="tile-divider" />
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo-link" href="index.html" style="margin-bottom: 12px">
+          <img class="logo-image" src="assets/images/sosmos-logo.png" alt="Sosmos logo" />
+          <span>Sosmos</span>
+        </a>
+        <p>Authentic Turkish flavour. Right at your market.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Navigate</h3>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="story.html">Our Story</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="find-us.html">Find Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <ul class="footer-hours">
+          <li>Mon: Closed</li>
+          <li>Tue: 9:00 AM-3:00 PM</li>
+          <li>Wed: Closed</li>
+          <li>Thu: 9:00 AM-3:00 PM</li>
+          <li>Fri: 9:00 AM-3:00 PM</li>
+          <li>Sat: 9:00 AM-4:00 PM</li>
+          <li>Sun: 9:00 AM-4:00 PM</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <div class="social-row">
+          <a class="social-btn" href="https://www.instagram.com/sosmos.au" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a class="social-btn" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="social-btn" href="https://www.tiktok.com/@sosmos.au" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">© 2025 Sosmos. All rights reserved. | Queen Victoria Market, Melbourne,
+      Australia</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

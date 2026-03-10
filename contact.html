@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Sosmos</title>
+    <meta
+      name="description"
+      content="Get in touch with Sosmos for general questions, feedback, or catering enquiries at Queen Victoria Market in Melbourne."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWix+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8l9ggpc8X+Ytst4yBo/hH+8FkLivBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo-link" href="index.html" aria-label="Sosmos home">
+          <img class="logo-image" src="assets/images/sosmos-logo.png" alt="Sosmos logo" />
+          <span>Sosmos</span>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav>
+          <ul class="nav-menu" id="siteNav">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="menu.html">Menu</a></li>
+            <li><a class="nav-link" href="story.html">Our Story</a></li>
+            <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li><a class="nav-link" href="reviews.html">Reviews</a></li>
+            <li><a class="nav-link" href="find-us.html">Find Us</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <h1 class="page-header__title">Contact</h1>
+          <div class="page-header__accent" aria-hidden="true"></div>
+          <p class="page-header__breadcrumb"><a href="index.html">Home</a> / <span>Contact</span></p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="card reveal" style="padding: 24px">
+            <h2 style="margin-bottom: 12px">Send a Message</h2>
+            <p style="margin-bottom: 14px">Form submission coming soon. For now, this form shows a confirmation message.</p>
+            <form id="contactForm" class="contact-form">
+              <label for="name">Full Name</label>
+              <input id="name" name="name" type="text" required />
+
+              <label for="email">Email Address</label>
+              <input id="email" name="email" type="email" required />
+
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option>General Enquiry</option>
+                <option>Catering Enquiry</option>
+                <option>Feedback</option>
+                <option>Other</option>
+              </select>
+
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+
+              <button class="btn btn-primary" type="submit">Send Message</button>
+              <div class="success-alert">Thanks for reaching out! We'll get back to you soon.</div>
+            </form>
+          </div>
+
+          <aside class="card reveal" style="padding: 24px">
+            <h2 style="margin-bottom: 14px">Contact Details</h2>
+            <p>📍 Location: Queen Victoria Market, Melbourne</p>
+            <p style="margin-top: 8px">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram:
+              <a href="https://www.instagram.com/sosmos.au" target="_blank" rel="noopener">@sosmos.au</a>
+            </p>
+            <p style="margin-top: 8px">👍 Facebook: <a href="#">Sosmos</a></p>
+            <p style="margin-top: 8px">
+              <i class="fa-brands fa-tiktok" aria-hidden="true"></i> TikTok:
+              <a href="https://www.tiktok.com/@sosmos.au" target="_blank" rel="noopener">@sosmos.au</a>
+            </p>
+            <p style="margin-top: 16px">For the fastest response, reach out to us via Instagram DM.</p>
+
+            <div class="callout" style="margin-top: 24px; background: #fff6eb">
+              <h3>Catering & Private Events</h3>
+              <p>
+                Interested in bringing authentic Turkish street food to your next event? We'd love to cater for you. Get in touch via
+                the form above or reach out on socials.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <hr class="tile-divider" />
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo-link" href="index.html" style="margin-bottom: 12px">
+            <img class="logo-image" src="assets/images/sosmos-logo.png" alt="Sosmos logo" />
+            <span>Sosmos</span>
+          </a>
+          <p>Authentic Turkish flavour. Right at your market.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Navigate</h3>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="story.html">Our Story</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="find-us.html">Find Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <ul class="footer-hours">
+            <li>Mon: Closed</li>
+            <li>Tue: 9:00 AM-3:00 PM</li>
+            <li>Wed: Closed</li>
+            <li>Thu: 9:00 AM-3:00 PM</li>
+            <li>Fri: 9:00 AM-3:00 PM</li>
+            <li>Sat: 9:00 AM-4:00 PM</li>
+            <li>Sun: 9:00 AM-4:00 PM</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Follow</h3>
+          <div class="social-row">
+            <a class="social-btn" href="https://www.instagram.com/sosmos.au" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a class="social-btn" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a class="social-btn" href="https://www.tiktok.com/@sosmos.au" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">© 2025 Sosmos. All rights reserved. | Queen Victoria Market, Melbourne, Australia</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
