@@ -164,13 +164,42 @@
   const contactForm = document.querySelector("#contactForm");
   if (contactForm) {
     const alert = document.querySelector(".success-alert");
-    contactForm.addEventListener("submit", (event) => {
+    contactForm.addEventListener("submit", async (event) => {
       event.preventDefault();
-      if (alert) {
-        alert.style.display = "block";
-        alert.setAttribute("role", "status");
+      const submitButton = contactForm.querySelector('button[type="submit"]');
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = "Sending...";
       }
-      contactForm.reset();
+
+      const showAlert = (message, ok) => {
+        if (!alert) return;
+        alert.textContent = message;
+        alert.style.display = "block";
+        alert.style.borderColor = ok ? "#95cba9" : "#e4a3a3";
+        alert.style.background = ok ? "#eaf8ef" : "#fff1f1";
+        alert.style.color = ok ? "#245833" : "#7f1d1d";
+        alert.setAttribute("role", "status");
+      };
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: "POST",
+          body: new FormData(contactForm),
+          headers: { Accept: "application/json" },
+        });
+
+        if (!response.ok) throw new Error("Submission failed");
+        showAlert("Thanks for reaching out! We'll get back to you soon.", true);
+        contactForm.reset();
+      } catch (_) {
+        showAlert("Sorry, we couldn't send your message. Please try again or contact us on Instagram.", false);
+      } finally {
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = "Send Message";
+        }
+      }
     });
   }
 
