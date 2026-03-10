@@ -51,13 +51,16 @@
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-bg">
-        <img src="assets/images/sosmos-exterior.JPG"
-          alt="Hero background — food truck at Queen Victoria Market, vibrant and busy">
-      </div>
-      <div class="hero-content hero-animate">
+    <main>
+      <section class="hero">
+        <div class="hero-bg">
+          <picture>
+            <source media="(max-width: 768px)" srcset="assets/images/truck-1.png" />
+            <img src="assets/images/sosmos-exterior.JPG"
+              alt="Hero background — food truck at Queen Victoria Market, vibrant and busy">
+          </picture>
+        </div>
+        <div class="hero-content hero-animate">
         <h1>Sosmos</h1>
         <p>Authentic Turkish Street Food at Queen Victoria Market, Melbourne</p>
         <div class="hero-actions">
@@ -100,7 +103,7 @@
       <div class="container">
         <h2 class="section-title">What's On the Menu</h2>
         <p class="section-lead">A few customer favourites from our truck.</p>
-        <div class="featured-grid stagger">
+        <div class="featured-grid menu-scroll-mobile stagger">
           <article class="card reveal">
             <img src="assets/images/barramundi-roll.png" alt="Photo: Barramundi Roll">
             <div class="card-body">

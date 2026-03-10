@@ -107,9 +107,6 @@
       const clone = source.cloneNode(true);
       if (clone.tagName && clone.tagName.toLowerCase() === "img") {
         clone.classList.remove("menu-image-main");
-        clone.classList.add("ratio-4-3");
-      } else {
-        clone.classList.add("ratio-4-3");
       }
       lightboxInner.innerHTML = "";
       lightboxInner.appendChild(clone);
